@@ -11,8 +11,9 @@
   --white: hsl(0, 0%, 100%);
 
   /*spacing*/
-  --spacing-24: 24px;
-  --spacing-12: 12px;
+  --spacing-24: calc(24 / 16 * 1rem);
+  --spacing-12: calc(12 / 16 * 1rem);
+  --spacing-4: calc(4 / 16 * 1rem);
 
   /*border-radius*/
   --radius-20: calc(20 / 16 * 1rem);
@@ -71,7 +72,7 @@ a:focus {
   border-radius: var(--radius-20);
   box-shadow: 8px 8px var(--gray-950);
   padding: var(--spacing-24);
-  width: 327px;
+  width: calc(327 / 16 * 1rem);
 }
 
 .content {
@@ -91,7 +92,7 @@ a:focus {
   font-size: var(--font-size-detail);
   font-weight: var(--font-weight-extra-bold);
   margin-block-end: var(--spacing-12);
-  padding: 4px 12px;
+  padding: var(--spacing-4) var(--spacing-12);
   text-align: center;
 }
 
@@ -147,7 +148,7 @@ footer {
 
 @media (min-width: 640px) {
   .card {
-    width: 384px;
+    width: calc(384 / 16 * 1rem);
   }
 
   .heading {
