@@ -35,7 +35,7 @@
 body {
   background-color: var(--yellow);
   color: var(--gray-950);
-  font-size: var(--font-size-mobile-body);
+  font-size: var(--font-size-body);
   font-family: var(--font-family-fig);
   font-weight: var(--font-weight-medium);
   height: 100vh;
@@ -50,7 +50,7 @@ main {
 }
 
 h1 {
-  font-size: var(--font-size-mobile-heading);
+  font-size: var(--font-size-heading);
   font-weight: var(--font-weight-extra-bold);
 }
 
@@ -67,10 +67,9 @@ a:focus {
 
 .card {
   background-color: var(--white);
-  border: 1;
   border: calc(1 / 16 * 1rem) solid var(--gray-950);
   border-radius: var(--radius-20);
-  box-shadow: 10px 10px var(--gray-950);
+  box-shadow: 8px 8px var(--gray-950);
   padding: var(--spacing-24);
   width: 327px;
 }
@@ -82,23 +81,22 @@ a:focus {
 .hero {
   border-radius: var(--radius-10);
   margin-block-end: var(--spacing-24);
-  width: 279px;
+  width: 100%;
 }
 
 .tag {
   background-color: var(--yellow);
   border-radius: var(--radius-4);
-  font-size: var(--font-size-mobile-extra);
+  display: inline-block;
+  font-size: var(--font-size-detail);
   font-weight: var(--font-weight-extra-bold);
-  height: 26px;
   margin-block-end: var(--spacing-12);
-  padding-block-start: 4px;
+  padding: 4px 12px;
   text-align: center;
-  width: 73px;
 }
 
 .date {
-  font-size: var(--font-size-mobile-extra);
+  font-size: var(--font-size-detail);
   margin-block-end: var(--spacing-12);
 }
 
@@ -133,7 +131,7 @@ footer {
 }
 
 .attribution {
-  font-size: var(--font-size-mobile-extra);
+  font-size: var(--font-size-detail);
   text-align: center;
 }
 
@@ -145,4 +143,14 @@ footer {
 .attribution a:hover,
 .attribution a:focus {
   color: var(--gray-950);
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: 384px;
+  }
+
+  .heading {
+    margin-block-end: var(--spacing-12);
+  }
 }

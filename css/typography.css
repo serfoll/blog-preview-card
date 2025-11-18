@@ -22,17 +22,22 @@
   --font-family-fig: 'Figtree', sans-serif;
   --font-family-fig-italic: 'Figtree Italic', sans-serif;
 
-  --font-size-body: 1rem;
-  --font-size-heading: calc(24 / 16 * 1rem);
-  --font-size-detail: calc(14 / 16 * 1rem);
-
-  --font-size-mobile-body: calc(14 / 16 * 1rem);
-  --font-size-mobile-extra: calc(12 / 16 * 1rem);
-  --font-size-mobile-heading: calc(20 / 16 * 1rem);
+  --font-size-body: calc(14 / 16 * 1rem);
+  --font-size-detail: calc(12 / 16 * 1rem);
+  --font-size-heading: calc(20 / 16 * 1rem);
 
   --font-weight-medium: 500;
   --font-weight-extra-bold: 800;
 
   /*line heights*/
   --line-height-body: 1.5;
+}
+
+@media (min-width: 640px) {
+  :root {
+    /*typography*/
+    --font-size-body: 1rem;
+    --font-size-detail: calc(14 / 16 * 1rem);
+    --font-size-heading: calc(24 / 16 * 1rem);
+  }
 }
