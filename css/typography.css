@@ -23,8 +23,12 @@
   --font-family-fig-italic: 'Figtree Italic', sans-serif;
 
   --font-size-body: 1rem;
-  --font-size-extra: calc(15 / 16 * 1rem);
   --font-size-heading: calc(24 / 16 * 1rem);
+  --font-size-detail: calc(14 / 16 * 1rem);
+
+  --font-size-mobile-body: calc(14 / 16 * 1rem);
+  --font-size-mobile-extra: calc(12 / 16 * 1rem);
+  --font-size-mobile-heading: calc(20 / 16 * 1rem);
 
   --font-weight-medium: 500;
   --font-weight-extra-bold: 800;
