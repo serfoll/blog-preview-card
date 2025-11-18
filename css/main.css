@@ -1,0 +1,45 @@
+/** @format */
+
+@import url('./typography.css');
+
+:root {
+  /*colors*/
+  --blue-300: hsl(228, 45%, 44%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+
+  /*spacing*/
+  --spacing-24: 24px;
+  --spacing-12: 12px;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font: inherit;
+  font-style: normal;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+body {
+  color: var(--gray-950);
+  font-size: var(--font-size-body);
+  font-family: var(--font-family-fig);
+  font-weight: var(--font-weight-medium);
+  height: 100vh;
+  line-height: var(--line-height-body);
+}
+
+.attribution {
+  font-size: var(--font-size-extra);
+  text-align: center;
+}
+.attribution a {
+  color: var(--blue-300);
+}
