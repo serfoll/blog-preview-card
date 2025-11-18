@@ -61,8 +61,7 @@ a:visited {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   color: var(--yellow);
 }
 
@@ -70,7 +69,7 @@ a:focus {
   background-color: var(--white);
   border: calc(1 / 16 * 1rem) solid var(--gray-950);
   border-radius: var(--radius-20);
-  box-shadow: 8px 8px var(--gray-950);
+  box-shadow: calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) var(--gray-950);
   padding: var(--spacing-24);
   width: calc(327 / 16 * 1rem);
 }
@@ -117,9 +116,9 @@ a:focus {
 }
 
 .author img {
-  height: 32px;
+  height: calc(32 / 16 * 1rem);
   margin-inline-end: var(--spacing-12);
-  width: 32px;
+  width: calc(32 / 16 * 1rem);
 }
 
 .author p {
@@ -127,7 +126,7 @@ a:focus {
 }
 
 footer {
-  bottom: 40px;
+  bottom: calc(20 / 16 * 1rem);
   position: relative;
 }
 
@@ -141,12 +140,11 @@ footer {
   color: var(--blue-300);
 }
 
-.attribution a:hover,
-.attribution a:focus {
+.attribution a:hover {
   color: var(--gray-950);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .card {
     width: calc(384 / 16 * 1rem);
   }

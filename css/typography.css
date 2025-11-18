@@ -33,7 +33,7 @@
   --line-height-body: 1.5;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   :root {
     /*typography*/
     --font-size-body: 1rem;
